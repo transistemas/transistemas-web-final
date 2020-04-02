@@ -29,6 +29,9 @@ header {
 	top: 20px;
 	right: 15px;
 	z-index: 30;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
 }
 
 header nav ul {
@@ -118,7 +121,5 @@ body.hamburger-menu-active .icon-hamburger {
 
 /* Estilos tablet y desktop */
 @media (min-width: 759px) {
-	
+
 }
-
-
