@@ -121,5 +121,33 @@ body.hamburger-menu-active .icon-hamburger {
 
 /* Estilos tablet y desktop */
 @media (min-width: 759px) {
-
+    main .cta-container #inscribirme {
+        float: left;
+        margin-left: 24%;
+    }
+    main .cta-container #colaborar {
+        float: right;
+        margin-right: 24%;
+        }
+    main .cta-container #inscribirme,
+    main .cta-container #colaborar {
+	    width: 180px;
+        line-height: 40px;
+        font-weight: bold;
+        margin-top: 65px;
+    }
 }
+@media (min-width: 1200px){
+     main .cta-container #inscribirme {
+        margin-left: 34%;
+}
+     main .cta-container #colaborar {
+        margin-right: 34%;
+        }
+    main .cta-container #inscribirme,
+    main .cta-container #colaborar {
+	    width: 180px;
+        line-height: 40px;
+        margin-top: 95px;
+         }
+    }
