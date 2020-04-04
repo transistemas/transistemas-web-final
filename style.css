@@ -11,6 +11,7 @@
 /* Header */
 
 header {
+	margin: 5px;
 	height: 50px;
 }
 
@@ -19,13 +20,10 @@ header {
 }
 
 .home-link {
-	position: absolute;
-	left: 0;
-	top: 0;
+	float: left;
 	margin-top: 10px;
 	margin-left: 10px;
 }
-
 
 nav a img {
 	height: auto;
@@ -38,7 +36,6 @@ nav a img {
 	opacity: 80%;
 	transition-duration: 125ms;
 }
-
 
 .hamburger-button {
 	position: absolute;
@@ -82,7 +79,7 @@ header nav {
 
 main {
 	margin: 25px;
-	margin-top: 70px;
+	margin-top: 50px;
 }
 
 p {
@@ -98,10 +95,7 @@ main .cta-container #colaborar {
 	text-align: center;
 	margin: 24px auto;
 	border-radius: 10px;
-	display: block;
-	color: #fff;
 }
-
 main .cta-container #inscribirme {
 	background-color: #F4A6B8;
 	margin-top: 40px;
@@ -110,6 +104,10 @@ main .cta-container #inscribirme {
 main .cta-container #colaborar {
 	background-color: #65C7EE;
 	margin-top: 20px;
+}
+
+.cta {
+	color: white;
 }
 
 /* animación hover, para la version web */
@@ -164,6 +162,11 @@ body.hamburger-menu-active .icon-hamburger {
 		display: none;
 	}
 
+	header nav {
+		display: block;
+		width: auto;
+		position: inherit;
+	}
 	header nav ul li .cta {
 		background-color: pink;
 		font-weight: bold;
@@ -304,12 +307,13 @@ body.hamburger-menu-active .icon-hamburger {
 	main .cta-container #colaborar {
 		margin-right: 24%;
 	}
-	@media (min-width: 1300px){
-		.home-link {
-			margin-top: 36px;
-			margin-left: 49px;
-		}
-		main {
-			left: 207px;
-		}
+}
+@media (min-width: 1300px){
+	.home-link {
+		margin-top: 36px;
+		margin-left: 49px;
 	}
+	main {
+		left: 207px;
+	}
+}
