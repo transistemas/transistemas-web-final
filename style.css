@@ -25,7 +25,7 @@ header {
 
 nav a img {
 	height: auto;
-    width: 32px;
+	width: 32px;
 }
 .hamburger-button {
 	position: absolute;
@@ -122,82 +122,127 @@ body.hamburger-menu-active .modal-background {
 body.hamburger-menu-active .icon-hamburger {
 	display: none;
 }
-
-/* Estilos tablet y desktop */
-@media (min-width: 759px) {
-	.home-link {
-    float: left;
-    margin-top: 24px;
-    margin-left: 24px;
-}
-nav a img {
-	height: 48px;
-	width: auto;
-}
-main {
-		max-width: 1025px;
-    left: 127px;
-    position: absolute;
-    top: 194px;
-    margin: 0px;
-}
-h1 {
-	font-size: 58px;
-	line-height: 71px;
-	font-weight: bold;
-}
-p {
-	font-size: 32px;
-	line-height: 55px;
-}
-
+/*Intermedio celular a tablet*/
+@media (min-width: 600px) {
+	p {
+		font-size: 21px;
+		line-height: 31px;
+	}
 	main .cta-container #inscribirme {
 		float: left;
-		margin-left: 24%;
+		margin-left: 9%;
 		display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
+		justify-content: center;
+		flex-direction: column;
+		align-content: center;
 	}
 	main .cta-container #colaborar {
 		float: right;
-		margin-right: 24%;
+		margin-right: 9%;
 		display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
+		justify-content: center;
+		flex-direction: column;
+		align-content: center;
+	}
+	main .cta-container #inscribirme,
+	main .cta-container #colaborar {
+		height: 46px;
+		font-size: 20px;
+		line-height: 29px;
+		width: 212px;
+		margin-top: 45px;
+	}
+}
+@media (min-width: 759px) {
+	.home-link {
+		margin-top: 24px;
+		margin-left: 24px;
+	}
+	nav a img {
+		height: 48px;
+		width: auto;
+	}
+	main {
+		max-width: 91%;
+		left: 35px;
+		position: absolute;
+		top: 194px;
+		margin: 0px;
+	}
+	h1 {
+		font-size: 44px;
+		line-height: 66px;
+		font-weight: bold;
+	}
+	p {
+		font-size: 26px;
+		line-height: 42px;
+	}
+
+	main .cta-container #inscribirme {
+		margin-left: 12%;
+	}
+	main .cta-container #colaborar {
+		margin-right: 12%;
 	}
 	main .cta-container #inscribirme,
 	main .cta-container #colaborar {
 		height: 60px;
-    font-size: 24px;
-    line-height: 29px;
-    width: 248px;
-    margin-top: 72px;
-    top: 329px;
+		font-size: 24px;
+		width: 248px;
+		margin-top: 72px;
+	}
+}
+@media (min-width: 900px) {
+	main {
+		max-width: 88%;
+		left: 70px;
+	}
+	h1 {
+		font-size: 58px;
+		line-height: 71px;
+	}
+	p {
+		font-size: 29px;
+		line-height: 52px;
+	}
+	main .cta-container #inscribirme {
+		margin-left: 15%;
+	}
+	main .cta-container #colaborar {
+		margin-right: 15%;
+	}
+}
+@media (min-width: 1000px) {
+	.home-link {
+		margin-top: 36px;
+		margin-left: 49px;
+	}
+	main {
+		left: 11%;
+		max-width: 80%;
+	}
+	main .cta-container #inscribirme {
+		margin-left: 18%;
+	}
+	main .cta-container #colaborar {
+		margin-right: 18%;
 	}
 }
 @media (min-width: 1200px){
-	.home-link {
-    float: left;
-    margin-top: 36px;
-    margin-left: 49px;
-}
-main {
-    left: 207px;
-    top: 284px;
-}
+	main {
+		max-width: 1025px;
+		top: 194px;
+		left: 127px;
+	}
 	main .cta-container #inscribirme {
 		margin-left: 24%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
 	}
 	main .cta-container #colaborar {
 		margin-right: 24%;
-		display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-content: center;
+	}
+	@media (min-width: 1300px){
+		main {
+			left: 207px;
+		}
 	}
