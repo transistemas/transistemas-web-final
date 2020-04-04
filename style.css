@@ -124,6 +124,34 @@ body.hamburger-menu-active .icon-hamburger {
 }
 /*Intermedio celular a tablet*/
 @media (min-width: 600px) {
+	.hamburger-button {
+		display: none;
+	}
+
+	header nav ul li .cta {
+		background-color: pink;
+		font-weight: bold;
+		color: white;
+		border-radius: 8px;
+		padding: 7px;
+	}
+
+	header nav ul {
+    float: right;
+    display: block;
+    margin-top: 20px;
+    margin-right: 10px;
+		}
+
+	header nav ul li {
+		float: left;
+		padding: 15px;
+		font-weight: bold;
+		font-size: 14px;
+		text-align: center;
+		list-style-type: none;
+	}
+
 	p {
 		font-size: 21px;
 		line-height: 31px;
@@ -214,10 +242,6 @@ body.hamburger-menu-active .icon-hamburger {
 	}
 }
 @media (min-width: 1000px) {
-	.home-link {
-		margin-top: 36px;
-		margin-left: 49px;
-	}
 	main {
 		left: 11%;
 		max-width: 80%;
@@ -242,6 +266,10 @@ body.hamburger-menu-active .icon-hamburger {
 		margin-right: 24%;
 	}
 	@media (min-width: 1300px){
+		.home-link {
+			margin-top: 36px;
+			margin-left: 49px;
+		}
 		main {
 			left: 207px;
 		}
