@@ -1,4 +1,5 @@
 /* Estilos generales para todos los elementos */
+
 * {
 	text-decoration: none;
 	font-family: 'Montserrat';
@@ -8,8 +9,8 @@
 }
 
 /* Header */
+
 header {
-	margin: 5px;
 	height: 50px;
 }
 
@@ -18,15 +19,27 @@ header {
 }
 
 .home-link {
-	float: left;
+	position: absolute;
+	left: 0;
+	top: 0;
 	margin-top: 10px;
 	margin-left: 10px;
 }
+
 
 nav a img {
 	height: auto;
 	width: 32px;
 }
+
+/* animación hover, para la version web */
+
+.home-link:hover {
+	opacity: 80%;
+	transition-duration: 125ms;
+}
+
+
 .hamburger-button {
 	position: absolute;
 	top: 20px;
@@ -56,10 +69,20 @@ header nav ul li .cta {
 	font-weight: bold;
 }
 
+header nav {
+	background-color: #fff;
+	width: 262px;
+	height: 100%;
+	position: absolute;
+	right: 0;
+	display: none;
+}
+
 /* Main */
+
 main {
 	margin: 25px;
-	margin-top: 50px;
+	margin-top: 70px;
 }
 
 p {
@@ -75,6 +98,8 @@ main .cta-container #colaborar {
 	text-align: center;
 	margin: 24px auto;
 	border-radius: 10px;
+	display: block;
+	color: #fff;
 }
 
 main .cta-container #inscribirme {
@@ -87,8 +112,13 @@ main .cta-container #colaborar {
 	margin-top: 20px;
 }
 
-.cta {
-	color: white;
+/* animación hover, para la version web */
+
+main .cta-container #colaborar:hover,
+main .cta-container #inscribirme:hover {
+	font-weight: bold;
+	opacity: 80%;
+	transition-duration: 250ms;
 }
 
 .modal-background {
@@ -97,13 +127,14 @@ main .cta-container #colaborar {
 	width: 100%;
 	height: 100%;
 	display: none;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 1;
 }
 
 /* Estilos con menú hamburguesa abierto  */
+
 body.hamburger-menu-active .icon-hamburger-close {
 	display: block;
 	z-index: 20;
@@ -114,9 +145,14 @@ body.hamburger-menu-active header nav ul {
 	z-index: 10;
 }
 
+body.hamburger-menu-active header nav {
+	display: block;
+	z-index: 5;
+}
+
 body.hamburger-menu-active .modal-background {
 	display: block;
-	z-index: 1;
+	z-index: 2;
 }
 
 body.hamburger-menu-active .icon-hamburger {
@@ -137,11 +173,11 @@ body.hamburger-menu-active .icon-hamburger {
 	}
 
 	header nav ul {
-    float: right;
-    display: block;
-    margin-top: 20px;
-    margin-right: 10px;
-		}
+		float: right;
+		display: block;
+		margin-top: 20px;
+		margin-right: 10px;
+	}
 
 	header nav ul li {
 		float: left;
@@ -181,6 +217,9 @@ body.hamburger-menu-active .icon-hamburger {
 		margin-top: 45px;
 	}
 }
+
+/* Estilos tablet y desktop */
+
 @media (min-width: 759px) {
 	.home-link {
 		margin-top: 24px;
